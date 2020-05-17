@@ -194,7 +194,7 @@ p {
 =======================*/
 
 .first-section {
-	background-image: url(../img/logo1.jpg);
+	background-image: url(../images/logo1.jpg);
 	background-size: cover;
 	width: 90%;
 	background-repeat: no-repeat;
@@ -265,7 +265,7 @@ p {
 =======================*/
 
 .third-section {
-	background-image: url(../img/sixth-section-bg.png);
+	background-image: url(../images/sixth-section-bg.png);
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -361,7 +361,7 @@ p {
 
 footer {
 	text-align: center;
-	background-image: url(../img/footer-bg.png);
+	background-image: url(../images/footer-bg.png);
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -456,7 +456,7 @@ footer a:hover {
 
 /* Preload images */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
   display: none;
 }
 
@@ -535,7 +535,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../img/loading.gif) no-repeat;
+  background: url(../images/loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -566,7 +566,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../img/prev.png) left 48% no-repeat;
+  background: url(../images/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -584,7 +584,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../img/next.png) right 48% no-repeat;
+  background: url(../images/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -652,7 +652,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../img/close.png) top right no-repeat;
+  background: url(../images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
