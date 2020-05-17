@@ -1,0 +1,178 @@
+<!doctype html>
+<html class="no-js" lang=""> 
+    <head>
+	<style>
+		*{box-sizing: border-box}
+		
+		.dropbtn{background-color:#3399ff; color: white; padding: 16px; font-size: 16px; border:none}
+		.dropdown-hover{position:relative; display:inline-block;}
+		.dropdown-content{display:none; position:absolute; background-color: #f1f1f1; min-width: 160px; box-shadow:0px 8px 16px 0px rgba(0,0,0,2); z-index: 1}
+		.dropdown-content a{color: black; padding: 12px 16px; text-decoration: none; display: block;}
+		.dropdown-content a:hover{background-color:#ddd;}
+		.dropdown-hover:hover .dropdown-content{display: block;}
+		.dropdown-hover:hover .dropbtn{background-color:#3e8e41;}
+		
+		.input [type = time], input[type=time] {width:25%; padding:15px; margin:5px 0 22px; display:inline-block; border:1% groove black; background:#f1f1f1;}
+		.input [type = text], input[type=number] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text], input[type=name] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text], input[type=phonenumber] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text], input[type=address] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text], input[type=email] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}		
+		.input [type = text], input[type=password] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text]:focus, input[type=password]:focus {background-color:#ddd;outline:none}
+		.hr{border:1px sloid #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor:pointer; width:100%; opacity:0,9;}
+		.button:hover{opacity:1}
+		.cancelbtn, .updatebtn{float: left; width: 50%}
+		.clearfix::after{content:" "; clear: both; display: table;}
+		.@media screen and (max-width:300px) {.cancelbtn, .updatebtn {width: 100%}}
+		
+		.avai{background-color:silver; margin:1%, padding:1%}
+
+	</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Registration</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link href="timerangepicker.css" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
+
+		<title></title>
+		<link rel="shortcut icon" type="image/jpg" href="img/logo1.jpg">
+		
+		
+		
+		<div class = "dropdown-hover">
+			<button class = "dropbtn">MENU</button>
+				<div class = "dropdown-content">
+					<a href="HomePage.html">HOME</a>
+					<a href="SignIn.html">ORDER</a>
+					<a href="CurrentlyUnavailable.html">SUPPORT</a>
+					<a href="CurrentlyUnavailable.html">WORK WITH US</a>
+					<a href="DistributorSignIn.html">DISTRIBUTOR</a>
+					<a href="CurrentlyUnavailable.html">CONTACT US</a>
+				</div>
+		</div>
+    </head>
+	
+	
+    <body>
+        
+
+        <section class="fifth-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">		
+							<form action = "action_page.php style = "border: 1px solid #ccc">
+								<h1>Registration Entry</h1>
+								<hr>
+								
+								<label for = "firstname">
+									<b> Name </b></label><br>
+										<input type = "name" placeholder = "First Name" name = "name" required>
+								<br>
+								<label for = "lastname">
+									<b> Surname </b></label><br>
+										<input type = "name" placeholder = "Last name" name = "name " required>
+								<br>
+								
+								<br>								
+								
+								<label for = "phone">
+									<b> Contact Number </b></label><br>
+										<input type = "phonenumber" placeholder = "Contact Number" name = "phonenumber" required>
+								<br>
+								
+								<br>								
+								<label for = "email">
+									<b> Email </b></label><br>
+										<input type = "email" placeholder = "Email" name = "email" required>
+								<br>
+								
+								<label for = "address">
+									<b> Address </b></label><br>
+										<input type = "address" placeholder = "Address" name = "address" required>
+								<br>
+								
+								
+								<label><br>
+									<p>Confirm Entry.</p>
+									<input type = "checkbox" checked = "checked" name = "remember" style = "margin-botton:15px">
+								<br>
+								</label><br>
+								
+								<br>
+								<label for = "Distributor ID">
+									<b> Distributor Number </b></label><br>
+										<input type = "number" placeholder = "Distributor ID" name = "number" required>
+								<br>
+								
+								<div class = "clearfix">
+									<button type = "button" class = "cancelbtn"> Cancel</button>
+									<button type = "submit" class = "updatebtn"> Register</button>
+								</div>
+							</form>
+						</div>
+					</div>		
+				</div>
+			</div>
+        </section>
+
+
+       
+        </section>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                 
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<script src="moment.min.js"></script>
+		<script src="timerangepicker.js"></script>
+		<script>
+			$('#picker').timerangepicker({
+				autoapply: true,
+				starttime: "08:00",
+				endtime: "18:00",
+				singletimepicker: true,
+				timepicker: true,
+				timepicker24hour: true,
+				showdropdown: true,
+				opens: 'right',
+				drops: 'down',
+			})
+		</script>
+		
+		
+
+    </body>
+</html>

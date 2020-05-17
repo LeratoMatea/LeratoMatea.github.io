@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang=""> 
+    <head>
+	<style>
+		*{box-sizing: border-box}
+		
+		.dropbtn{background-color:#3399ff; color: white; padding: 16px; font-size: 16px; border:none}
+		.dropdown-hover{position:relative; display:inline-block;}
+		.dropdown-content{display:none; position:absolute; background-color: #f1f1f1; min-width: 160px; box-shadow:0px 8px 16px 0px rgba(0,0,0,2); z-index: 1}
+		.dropdown-content a{color: black; padding: 12px 16px; text-decoration: none; display: block;}
+		.dropdown-content a:hover{background-color:#ddd;}
+		.dropdown-hover:hover .dropdown-content{display: block;}
+		.dropdown-hover:hover .dropbtn{background-color:#3e8e41;}
+		
+		.input [type = time], input[type=time] {width:25%; padding:15px; margin:5px 0 22px; display:inline-block; border:1% groove black; background:#f1f1f1;}
+		.input [type = text], input[type=phonenumber] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text], input[type=address] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text], input[type=email] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}		
+		.input [type = text], input[type=password] {width:100%; padding:15px; margin:5px 0 22px; display:inline-block; border:none; background:#f1f1f1;}
+		.input [type = text]:focus, input[type=password]:focus {background-color:#ddd;outline:none}
+		.hr{border:1px sloid #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor:pointer; width:100%; opacity:0,9;}
+		.button:hover{opacity:1}
+		.orderbtn{float: left; width: 50%}
+		.clearfix::after{content:" "; clear: both; display: table;}
+		.@media screen and (max-width:300px) {.cancelbtn, .updatebtn {width: 100%}}
+		.selectbox select{width:40%; padding:2%; margin:1%; font-size:120%; appearance:none; border-radius:10px}
+		.selectbox label{font-size:120%}
+	
+		.avai{background-color:silver; margin:1%, padding:1%}
+
+	</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Ordering</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link href="timerangepicker.css" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script>
+			function random()
+			{
+				var a = document.getElementById('input').value;
+				if(a === "Automatic")
+				{
+					var array=[]
+				}
+				document.getElementById('output').innerHTML = a;
+				
+			}
+		</script>
+		
+
+		<title></title>
+		<link rel="shortcut icon" type="image/jpg" href="img/logo1.jpg">
+		
+		
+		
+		<div class = "dropdown-hover">
+			<button class = "dropbtn">MENU</button>
+				<div class = "dropdown-content">
+					<a href="HomePage.html">HOME</a>
+					<a href="SignIn.html">ORDER</a>
+					<a href="CurrentlyUnavailable.html">SUPPORT</a>
+					<a href="CurrentlyUnavailable.html">WORK WITH US</a>
+					<a href="DistributorSignIn.html">DISTRIBUTOR</a>
+					<a href="CurrentlyUnavailable.html">CONTACT US</a>
+				</div>
+		</div>
+    </head>
+	
+	
+    <body>
+        
+
+        <section class="fifth-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<h1>Lock Selection</h1>
+							<p>Select your lock from the available options below.</p>
+							</br>
+							
+							<div class="selectbox">
+							<label for = "transmission">
+									<b>Car Transmission: </b></label><br>								
+							<select>
+								<option>Manual</option>
+								<option>Automatic</option>
+							</select>
+							</br>
+							
+							<label for = "make">
+									<b>Car Make: </b></label><br>
+							<select>
+								<option>Toyota</option>
+								<option>Nissan</option>
+								<option>BMW</option>
+								<option>Ford</option>
+								<option>Hyundai</option>
+								<option>Mazda</option>
+								<option>VW</option>
+								<option>Volvo</option>
+								
+							</select>
+							</br>	
+							
+							<label for = "model">
+									<b>Car Model:</b></label><br>
+							<select>
+								<option>Hilix</option>
+								<option>Yaris</option>
+								<option>NP300</option>
+								<option>Polo</option>
+								<option>Golf</option>
+								<option>Accent</option>
+								<option>Elantra</option>
+								<option>NP200</option>
+								<option>Corolla</option>
+								<option>Fortuner</option>
+							</select>
+							</br>
+							
+							<label for = "model">
+								<b>Quantity:</b></label><br>
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+							</br>
+							
+							</div>
+							</br>
+							<button type = "submit" class = "orderbtn"><a href="Availability.html">Place Order</a></button>
+							
+
+						</div>
+					</div>		
+				</div>
+			</div>
+        </section>
+
+
+       
+        </section>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                 
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+		
+		
+
+    </body>
+</html>
